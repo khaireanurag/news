@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <!-- Swap out "Roboto" for the font(s) you want to use -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- Your own CSS -->
+    <link rel="stylesheet" href="/styles.css">
+    
+
+  </head>
+  <body>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+<div class="container mt-5">
+
+    <h1>Weather Forecast in <%= @Loc_Display %> </h1>
+
+    <b1>
+
+    <table style="width:100%">
+    <tr>
+        <th>Today</th>
+        <th>Tomorrow</th>
+        <th>Day After</th>
+    </tr>
+    <tr>
+        <td>It is currenty <%= @current_temperature %> Degrees Farenheight and <%= @current_summary %>!</td>
+        <td>Tomorrow you can expect a high temperature of <%= @tom_temp_high %> Degrees Farenheight and <%= @tom_summary %>!</td>
+        <td>Day After you can expect a high temperature of <%= @dayafter_temp_high %> Degrees Farenheight and <%= @dayafter_summary %>!</td>
+    </tr>
+    </table>
+    </b1>
+
+</div>
+
+<div class="container mt-5">
+      
+    <h1>Top News for Today </h1>
+
+    <b1>
+    <table style="width:100%">
+    <tr>
+        <th><%= @headline[0] %></th>
+    </tr>
+    <tr>
+        <td><%= @description[0] %></td>
+    </tr>
+    <tr>
+        <td><a href = <%= @url[0] %>>Link to the Article</a></td>
+    </tr>
+    </table>
+    </b1>
+
+    <hr>
+
+        <b1>
+    <table style="width:100%">
+    <tr>
+        <th><%= @headline[1] %></th>
+    </tr>
+    <tr>
+        <td><%= @description[1] %></td>
+    </tr>
+    <tr>
+        <td><a href = <%= @url[1] %>>Link to the Article</a></td>
+    </tr>
+    </table>
+    </b1>
+
+    <hr>
+        <b1>
+    <table style="width:100%">
+    <tr>
+        <th><%= @headline[2] %></th>
+    </tr>
+    <tr>
+        <td><%= @description[2] %></td>
+    </tr>
+    <tr>
+        <td><a href = <%= @url[2] %>>Link to the Article</a></td>
+    </tr>
+    </table>
+    </b1>
+
+    <hr>
+
+        <b1>
+    <table style="width:100%">
+    <tr>
+        <th><%= @headline[3] %></th>
+    </tr>
+    <tr>
+        <td><%= @description[3] %></td>
+    </tr>
+    <tr>
+        <td><a href = <%= @url[3] %>>Link to the Article</a></td>
+    </tr>
+    </table>
+    </b1>
+
+    <hr>
+
+        <b1>
+    <table style="width:100%">
+    <tr>
+        <th><%= @headline[4] %></th>
+    </tr>
+    <tr>
+        <td><%= @description[4] %></td>
+    </tr>
+    <tr>
+        <td><a href = <%= @url[4] %>>Link to the Article</a></td>
+    </tr>
+    </table>
+    </b1>
+</div>
